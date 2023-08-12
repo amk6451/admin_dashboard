@@ -9,18 +9,26 @@
 </head>
 <body>
     <div class = "container">
+
         <div class = "header">
-            <div class = "search-bar"></div>
-            <div class = "header-icons">
-                <div class = "bell"></div>
-                <div class = "profile-icon"></div>
+            <div class="search-container">
+                <label for="search-container"><img src="./images/magnify.svg" alt="search"></label>
+                <input type="text" class="search-input">
+            </div>
+
+            <div class="profile-container">
+                <img class="bell-img" src="./images/bell.svg" alt="bell">
+                <img class="user-profile" src="./images/sushi.png" alt="user profile image">
+                <h3 class="user-name">Sushi</h3>
+            </div>
+
+            <div class = "greeting-container">
                 <div class = "profile-name">
-                    <p>Morgan Oakley</p>
+                    <p>Rocko Pup</p>
                 </div>
             </div>
 
-            <div class = "nav">
-                <div class = "profile"></div>
+            <div class = "nav-container">
                 <div class ="nav-links">
                     <ul>
                         <li>New</li>
@@ -32,17 +40,23 @@
         </div>
     
         <div class = "sidebar">
-            <div class = "logo">Dashboard</div>
+            <div class = "logo"><img src="./images/view-dashboard.svg" alt="Dashboard">Dashboard</div>
             <div class ="side-links">
+                <div></div>
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><img src="./images/home.svg" alt="home">Home</li>
+                    <li><img src="./images/card-account-details.svg" alt="profile">Profile</li>
+                    <li><img src="./images/message.svg" alt="profile">Messages</li>
+                    <li><img src="./images/clock-outline.svg" alt="History">History</li>
+                    <li><img src="./images/note-multiple.svg" alt="Tasks">Tasks</li>
+                </ul>
+            </div>
+            <div class ="setting-links">
+                <ul>
+                    <li><img src="./images/cog.svg" alt="Settings">Settings</li>
+                    <li><img src="./images/help.svg" alt="Support">Support</li>
+                    <li><img src="./images/shield-check.svg" alt="Privacy">Privacy</li>
+                </ul>
                 </ul>
             </div>
         </div>
@@ -50,55 +64,57 @@
     
         <div class="main-content">
             <div class="article">
-                <p>Your Projects</p>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <h2 class="title-container">Your Projects</h2>
+                <div class ="card-container">
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
                 </div>
             </div>
-            <div class = "announcements-container">
-                <div class="announcements-title">
-                    <p>Annoucements</p>    
-                  </div>
-                  <div class="announcements-content">
-                    <p class="title">Site Maintenance</p>
-                    <p class="profile">Words</p>
-                  </div>
-                  <div class="announcements-content">
-                    <p class="title">Community Share Day</p>
-                    <p class="profile">Words</p>
-                  </div>
-                  <div class="announcements-content">
-                    <p class="title">Updated Privacy Policy</p>
-                    <p class="profile">Words</p>
-                  </div>
-                  </div>
+
+
+            <div class = "announcement">
+                <h2 class="title-container">Your Projects</h2>
+                <div class ="announcement-container">
+                    <div class="announcements-content">
+                        <p class="title">Site Maintenance</p>
+                        <p class="profile">Words</p>
+                    </div>
+                    <div class="announcements-content">
+                        <p class="title">Community Share Day</p>
+                        <p class="profile">Words</p>
+                    </div>
+                    <div class="announcements-content">
+                        <p class="title">Updated Privacy Policy</p>
+                        <p class="profile">Words</p>
+                    </div>
+                </div>
             </div>
 
             <div class = "trending">
-                <div class="trending-title">
-                    <p>Trending</p>    
-                  </div>
+                <h2 class="title-container">Your Projects</h2>    
+                <div class="trending-container">
                   <div class="trending-content">
                     <p class="title">@User</p>
                     <p class="profile">Words</p>
@@ -111,6 +127,7 @@
                     <p class="title">@User</p>
                     <p class="profile">Words</p>
                   </div>
+                </div>
             </div>
         </div>
     </div>

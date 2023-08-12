@@ -1,22 +1,116 @@
-/* .container {
+.container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 4px;
     text-align: center;
-  } */
+  }
 
-
-  /* .header {
-    background-color: #393f4d;
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
 
+.header {
+    background-color: #393f4d;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-areas:
+    "search-container profile-container"
+    "greeting-container nav-container" ;
+  }
+
+.search-container{
+  grid-area: search-container;
+
+}
+
+.profile-container{
+ grid-area: profile-container;
+
+}
+
+.greeting-container{
+ grid-area:greeting-container;
+
+}
+
+.nav-container{
+grid-area: nav-container;
+}
+
+.sidebar {
+    grid-row: 1 / 4;
+    display: grid;
+    border: 3px solid red;
+  }
+
+
+.main-content{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
   .article {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-  } */
+    grid-template-columns: 1fr;
+    border: 3px solid pink;
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+
+
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+
+.announcement{
+    display: grid;
+    border: 3px solid orange;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+
+.trending{
+  display: grid;
+  border: 3px solid purple;
+  grid-column: 2;
+  grid-row: 2/3;
+}
+
+  img {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+  .card{
+    display: grid;
+    border-left: black 10px solid;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+
+  .grid-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+  }
+  
+
+  .title {
+    text-align: center;
+    margin: 0;
+  }
+
+  /* https://www.flaticon.com/free-icons/puppy */
+  /* https://www.flaticon.com/search?word=chicken */
